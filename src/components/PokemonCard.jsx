@@ -73,7 +73,7 @@ const PokemonCard = ({ pokemonID }) => {
                     {data.types.map(({ type }) => (
                         <Label key={type.name} size="tiny"
                             style={{
-                                textTransform: 'capitalize',
+                                textTransform: 'lowercase',
                                 backgroundColor: TYPE_COLORS[type.name] ?? '#aaa',
                                 color: '#fff',
                                 border: 'none',
@@ -90,7 +90,7 @@ const PokemonCard = ({ pokemonID }) => {
                                      justifyContent: 'space-between',
                                      alignItems: 'center',
                                      width: '100%'}}>
-                            <span style={{ textTransform: 'capitalize' }}>
+                            <span style={{ textTransform: 'lowercase' }}>
                                 {stat.name}
                             </span>
                             <span style={{ fontWeight: 700, marginLeft: 'auto' }}>
