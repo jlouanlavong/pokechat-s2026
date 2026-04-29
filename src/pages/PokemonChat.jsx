@@ -8,7 +8,7 @@ import { ChatForm } from '../components/ChatForm';
 
 
 const PokemonChat = () => {
-  const [pokemon, setPokemon] = useState([1, 2, 3]);
+  const [pokemon, setPokemon] = useState([]);
 
   return (
     <div className="CenteredTopLayout">
